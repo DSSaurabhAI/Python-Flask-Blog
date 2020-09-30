@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+<!--Go to getbootstrap .com then to examples then to signin, click on it, then view page source-->
+<!--then copy all content-->
+<!--extend the layout.html here and as layout.html has the head part and title part, remove the same from below after pasting and also remove the only html tag from below after pasting and only keep whatever is inside the form tags-->
+<!--then do little bit of padding and division-->
+{% block body %}
+	<!--when you were inspecting the singin bootstrap there there will be a link of signin.css highlighted in blue. Just click on that save save it as signin.css in static/css folder-->
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/signin.css')}}">
+
+	<div class='text-center padded' >
+	    <form class="form-signin" action='/dashboard' method='post'>
+		  <img class="mb-4" src="{{url_for('static', filename='img/login.svg')}}" alt="" width="72" height="72">
+		  <h1 class="h3 mb-3 font-weight-normal">Admin Login</h1>
+		  <label for="uname" class="sr-only">User Name</label><!--is placeholder value is different from User Name then it will not show User Name-->
+		  <input type="text" id="uname" name="uname" class="form-control" placeholder="User Name" required autofocus>
+		  <label for="pass" class="sr-only">Password</label>
+		  <input type="password" id="pass" name="pass" class="form-control" placeholder="Password" required>
+		  <div class="checkbox mb-3">
+		    <label>
+		      <input type="checkbox" value="remember-me"> Remember me
+		    </label>
+		  </div>
+		  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		  <p class="mt-5 mb-3 text-muted">&copy; {{params.blogname}}2017-2020</p>
+		</form>
+	</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{
+	"params":
+	{
+		"local_server":"True",
+		"local_uri":"mysql://root:@localhost:3307/codingthunder",
+		"prod_uri": "mysql://root:@localhost:3307/codingthunder",
+		"fb_url":   "https://www.facebook.com/saurabh.agrawal.1000",
+		"tw_url":   "https://twitter.com/AgrawalSauagr19?lang=en",
+		"gh_url":   "https://github.com/DSSaurabhAI",
+		"blog_name":"PostStrap",
+		"gmail-user": "testeroython813@gmail.com",
+		"gmail-password": "sendemail",
+		"about_text": "My Name is Saurabh Agrawal Would Like to provide you the best I can",
+		"no_of_posts": 5,
+		"login_image":"login.svg",
+		"admin_user": "saurabh",
+		"admin_password": "agrawal",
+		"upload_location": "C:/Users/saurabh.f.agrawal/Documents/P/Flask/CodeWithHarry/userFile/"
+
+	}
+}
